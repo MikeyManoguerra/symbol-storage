@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Image Asset handler</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__content">
+          <h1>Upload Images</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="form">
+        <div class="form__inner">
+          <form class="form__form" id="multipart" method="post" enctype="multipart/form-data">
+            <label class="form__label" for="">Job code</label>
+            <input class="form__text" type="text" name="title" required />
+            <label class="form__label" for="">password</label>
+            <input class="form__text" type="text" name="code" />
+            <label class="form__label" for="">modifer (ex: mobile, desktop)</label>
+            <input class="form__text" type="text" name="modifier" />
+            <label class="form__label" for="photos">Add Photos</label>
+            <input class="form__file" type="file" accept="image/*" name="photos" multiple />
+            <input class="form__submit" type="submit" value="upload" />
+          </form>
+          <form class="form__form" id="csv" method="post">
+            <label class="form__label" for="title">Job code</label>
+            <input class="form__text" type="text" name="title" required/>
+            <input class="form__submit" type="submit" value="generate csv" />
+          </form>
+        </div>
+      </section>
+      <section class="results">
+        <div class="results__inner">
+          <div class="results__content">
+            <div class="error" id="error"></div>
+            <div id="results"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

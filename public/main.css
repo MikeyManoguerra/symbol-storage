@@ -1,0 +1,67 @@
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+}
+
+input {
+  appearance: none;
+}
+
+.header__inner {
+  display: flex;
+  margin: 0 40px;
+}
+
+.form {
+  padding-bottom: 40px;
+}
+
+.form__inner {
+  display: flex;
+  justify-content: space-around ;
+  margin: 0 40px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form__file {
+  display: block;
+  margin-bottom: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.form__text {
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.form__submit {
+  display: block;
+  padding:   5px 10px;  
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #fff;
+  font-size: 16px;
+  border: 1px solid #000;
+}
+
+.results__inner {
+  display: flex;
+  margin: 0 40px;
+}
+
+.error{
+  color: #ff000f;
+}
