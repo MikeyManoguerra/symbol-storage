@@ -41,6 +41,15 @@ router.post('/upload', upload.array('photos'), async (req, res, next) => {
   }
 })
 
+router.get('/uploads/:project/:file', async (req, res, next) => {
+  try {
+    const { project, file } = req.params
+    res.sendFile(`${__dirname}/uploads/${project}/${file}`)
+  } catch (err) {
+    next(new Error('not found'))
+  }
+})
+
 router.post('/generate', bodyParser.json(), async (req, res, next) => {
   try {
     const { title } = req.body
