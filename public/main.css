@@ -45,7 +45,10 @@ input {
   border: 1px solid #000;
   font-size: 16px;
   font-family: 'Courier New', Courier, monospace;
-    
+}
+
+.modifier {
+  display: none;
 }
 
 .form__submit {

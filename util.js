@@ -54,7 +54,7 @@ function prepPathsForCsv(files, title) {
     const filePath = `https://csv-cdn.160over90.io/uploads/${title}/${file}`
 
     return {
-      file,
+      // file,
       filePath,
       // sheets: `=IMAGE("${filePath}")`,
     }

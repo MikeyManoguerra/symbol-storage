@@ -11,7 +11,7 @@ const fileFilter = (req, file, cb) => {
       throw new Error("uploads must include job code");
     }
 
-    if (req.body.code.trim().toLowerCase() !== 'delewareriver') {
+    if (req.body.code.trim().toLowerCase() !== '160over90') {
       throw new Error('The password you entered is incorrect')
     }
 
