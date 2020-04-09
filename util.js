@@ -51,12 +51,12 @@ async function getRelatedFiles(title) {
 
 function prepPathsForCsv(files, title) {
   return files.map((file) => {
-    const filePath = path.resolve(`./uploads/${title}/${file}`)
+    const filePath = `https://csv-cdn.160over90.io/uploads/${title}/${file}`
 
     return {
       file,
       filePath,
-      sheets: `=IMAGE("${filePath}")`,
+      // sheets: `=IMAGE("${filePath}")`,
     }
   })
 }
